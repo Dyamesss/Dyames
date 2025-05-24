@@ -1,0 +1,382 @@
+.pixelify-sans-true {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root {
+    --dark-purple: #231942;
+    --purple: #6600ff;
+    --mid-purple: #9F86C0;
+    --light-purple: #BE95C4;
+    --pink: #ff6600;
+    --black: #020202;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: normal;
+}
+.section1 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--pink);
+    
+}
+.topnav {
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    z-index: 99;
+}
+.optionbox {
+    position: absolute;
+    left: 0;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 1.5em;
+}
+.optionbox ul {
+    list-style: none;
+}
+.optionbox ul .option {
+    display: inline-block;
+    padding: 10px 20px;
+}
+a{
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #ac1400;
+}
+.loginbox {
+    position: absolute;
+    right: 0;
+    margin-top: 2%;
+    font-size: 1em;
+    margin-right: 2%;
+}
+.loginbox ul {
+    list-style: none;
+}
+.loginbox ul .option {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--pink);
+}
+.loginbox ul .option:nth-child(1) {
+    background-color: var(--pink);
+    color: #1e1e1e;
+}
+.header {
+    width: 100%;
+    height: 90vh;
+    background: var(--black);
+    position: relative;
+    
+}
+.maincontent {
+    position: absolute;
+    height: 90vh;
+    width: 33vw;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenttitle {
+    font-size: 2em;
+    font-weight: 800;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contentdesc {
+    font-size: 1.3em;
+    padding-right: 10vw;
+    margin: 10px;
+}
+.contentbtn {
+    font-size: 1.3em;
+    padding: 10px 30px;
+    color: var(--black);
+    background-color: var(--pink);
+    width: fit-content;
+    margin: 10px;
+}
+.section2 {
+    height: 50vh;
+    width: 100%;
+    background: url( bg.jpg), linear-gradient(to bottom, var(--black), var(--black) 50%, var(--pink) 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section3 {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    font-weight: 1000;
+    text-align: center;
+    position: relative;
+    
+}
+#hazardtitle {
+    margin-top: 15px;
+    position: absolute;
+    top: 0;
+}
+.bar {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    background-color: #020202;
+    margin-top: 30px;
+}
+.dangercontainer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    margin-top: 30px;
+}
+.dangerbox {
+    width: 300px;
+    height: 300px;
+    background-color: var(--black);
+    margin-left: 2px;
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink);
+}
+.dangerimg {
+    width: 200px;
+    height: 200px;
+    
+}
+.dangertitle {
+    margin-top: 20px;
+    font-size: .3em;
+    font-weight: 400;
+}
+.section4{
+    height: 15vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #ff6600, #cf3400, #cf1800);
+}
+
+
+/*  Issues  */
+.section5{
+    background-color: #cf1800;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; 
+    padding: 0;
+}
+
+.row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    height: 300px; 
+}
+
+.picture {
+    background-color: #ccc;
+    width: 100%;
+    height: 100%; 
+}
+
+.description {
+    background: #000000;
+    padding: 40px;
+    font-size: 2em;
+    line-height: 1.5;
+    color: #ff6600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    box-sizing: border-box;   
+}
+
+.row img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/*    Social Media    */
+.socmed{
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+/*  Community   */
+.announcementcontent {
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    background: var(--black);
+    left: 10%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.announceheader {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 80%;
+    height: 20%;
+    display: flex; 
+    align-items: center;
+}
+.adminname {
+    display: flex;
+    flex-direction: column;
+}
+.username {
+    color: var(--pink);
+    font-weight: 800;
+    font-size: 1.5em;
+}
+.at {
+    color: var(--pink);
+    opacity: 60%;
+    font-size: 1.5em;
+}
+.tag {
+    font-size: 2em;
+}
+.adminblogcontent {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 90%;
+    height: 40%;
+}
+.adminblogcontent .contenttext {
+    font-size: 2.5em;
+    color: var(--white);
+}
+.containerblog {
+    position: relative;
+    height: 10%;
+    width: 90%;
+    margin: auto;
+    background: var(--dark-grey);
+}
+.adminannounce {
+    background: var(--grey);
+    height: 70%;
+    width: 100%;
+    border: none;
+}
+.blogsection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+.communitybox {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #191818;
+}
+.blogheader {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.blogpost {
+    margin: 20px;
+    padding: 50px;
+    background: var(--grey);
+}
+.blogcontent {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+/*   knight bg   */
+.bgimage{
+    position: absolute;
+    width: 1200px;
+    height: 590px;
+    margin-right: 70px;
+    z-index: 1;
+    
+}
+.firebg{
+    position: absolute;
+    width: 1970px;
+    height: 300px;
+    margin-top: 367px;
+    
+}
+
+/* About Logo */
+.logoimage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+
+.section6 {
+    background: linear-gradient(to bottom, #cf1800, #ac1400);
+    text-align: center;
+    padding-top: 70px; 
+    
+}
+
+#infographicstitle {
+    max-width: fit-content;
+    margin-top: 65px;
+    font-size: 80px; 
+    color: #ffffff; 
+}
+
+.section6 img {
+    margin-top: 40px;
+    height: 25%;
+    width: 25%;
+}
+
